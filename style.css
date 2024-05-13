@@ -1,0 +1,369 @@
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+
+}
+
+.menu a:hover {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+/*INICIO DO MAIN*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.introducao {
+    padding: 40px;
+    position: relative;
+    align-content: center;
+
+
+}
+
+.introducao::before {
+    content: "";
+    background-image: url("images/detalhe.svg");
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    z-index: -2;
+    left: -10px;
+    top: 100px;
+
+
+}
+
+.introducao h1 {
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.introducao p {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    font-family: sans-serif;
+    color: #7a7474;
+}
+
+.lobo img {
+    max-width: 100%;
+    display: block;
+}
+
+.principal {
+    gap: 60px;
+}
+
+
+/*INICIO DA SECTION EXPERIENCIA*/
+
+.experiencia {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.xp {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.xp h1 {
+    font-size: 1.5rem;
+
+}
+
+.subtitulo {
+    font-size: 8rem;
+    word-break: break-all;
+    color: #dadada;
+    text-transform: uppercase;
+    max-width: 4ch;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.xp-itens {
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f5f5;
+    opacity: 0.9;
+    padding: 20px 30px;
+    gap: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+}
+
+.descricao {
+    font-size: 1.5rem;
+    padding: 40px;
+    grid-column: 2;
+    max-width: 40ch;
+    font-family: sans-serif;
+    color: #565252;
+}
+
+.descricao strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.empresa,
+.empresa-cargo {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.empresa {
+    position: relative;
+}
+
+.empresa:before {
+    content: " ";
+    width: 5px;
+    height: 20px;
+    background-color: rgb(50, 253, 50);
+    position: absolute;
+    left: -31px;
+
+}
+
+.empresa-cargo {
+    display: flex;
+}
+
+.empresa-descricao {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: #4c4444;
+
+
+}
+
+.tech {
+    display: flex;
+    gap: 10px;
+
+}
+
+.tech li {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    font-family: sans-serif;
+    color: #000;
+    border-radius: 4px;
+
+}
+
+/*FORMAÇOES*/
+.formacao {
+    background-color: #141414;
+    position: relative;
+}
+
+.formacao::after {
+    content: " ";
+    background: url(images/detalhe.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 120px;
+    bottom: -70px;
+}
+
+.formacao .experiencia {
+    padding: 100px 20px;
+}
+
+.negrito {
+    color: #d7cdcd;
+}
+
+.negrito strong {
+    color: #fff;
+}
+
+.formacao .subtitulo {
+    color: #000;
+}
+
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.curso-lista {
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #000000;
+    gap: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nome-curso::before {
+    content: " ";
+    width: 5px;
+    height: 20px;
+    background-color: rgb(22, 197, 22);
+    position: absolute;
+    left: -3px;
+
+}
+
+.tipo-curso {
+    font-size: 1rem;
+    color: #7a7474;
+}
+
+.nome-curso {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formacao p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cursos-titulo {
+    color: #7a7474;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.cursos-titulo::before {
+    content: " ";
+    background: url(images/cursos.svg);
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.cursos-intensivos {
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+
+.divisao-cursos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curso-duracao {
+    color: #7a7474;
+    font-size: 1.1rem;
+}
+
+.intensivo-nome {
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.idiomas::before {
+    content: " ";
+    background: url(images/idiomas.svg);
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+}
+
+.intensivo-nome strong {
+    font-weight: bold;
+}
+
+/*FOOTER*/
+.copy {
+    font-size: 1.2rem;
+    color: #4c4444;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 100px;
+
+}
+
+.footer-area {
+    font-size: 1.6rem;
+    margin-top: 60px;
+    color: #ccc;
+    line-height: 1.4;
+
+}
+
+.contatos li {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+.ig {
+    text-decoration: underline;
+}
+
+.grid-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
